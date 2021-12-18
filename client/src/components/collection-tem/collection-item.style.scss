@@ -1,0 +1,46 @@
+.collection-item {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.2);
+  overflow: hidden;
+  border-radius: 3px;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+
+  .image {
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+  }
+
+  .collection-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  & .custom-button {
+    position: absolute;
+    top: 250px;
+    display: none;
+    opacity: 0.8;
+    width: 80%;
+  }
+
+  &:hover {
+    .image {
+      opacity: 0.8;
+    }
+    & .custom-button {
+      display: block;
+    }
+  }
+}
